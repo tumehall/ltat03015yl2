@@ -80,41 +80,23 @@ nav ul li a {
 
 
 footer {
-    width: calc(100% - 80px);
     padding: 40px 40px;
-    background-color: #172029;
+    background-color: #000000;
     margin-top: 20px;
     overflow: hidden;
 }
 
-footer {
-    width: fit-content;
-    float: left;
-    padding-left: 0px;
-}
-
-footer {
-    display: block;
-    padding: 0 0 10px 0;
-}
-
 footer p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-weight: 300;
     font-size: 18px;
     letter-spacing: 2px;
     color: #ffffff;
-    text-transform: uppercase;
 }
 
-footer ul li a {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 3px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
+.footer {
+    width: calc(100vh - 32px);
+    float: left;
 }
 
 .footer-sm {
@@ -139,7 +121,6 @@ footer ul li a {
     display: block;
     float: left;
     height: auto;
-    width: calc(100vh - 200px);
 }
 
 .maincontent-h2 {
@@ -162,21 +143,27 @@ footer ul li a {
 }
 
 .maincontent-sidebar {
-    display: block;
+    display: none;
     background: #000000;
     height: auto;
     width: 200px;
+    height: 300px;
     float: right;
+    margin: 40px 6% 40px 2%;
 }
 
-.gallery {
-    display: block;
-    width: px;
+.sidebar-image {
+    background-image: url("img/chefs.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
 .gallery-image {
-    margin: 10px;
+    margin: 10px 24%;
     position: relative;
     text-align: center;
     -webkit-flex-basis: 300px;
@@ -206,9 +193,9 @@ footer ul li a {
 
 
 
-.gallery-links {
+ /*.gallery-links {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row-wrap;
     display: -webkit-flex;
     -webkit-flex-flow: row wrap;
     display: -moz-flex;
@@ -216,6 +203,12 @@ footer ul li a {
     justify-content: center;
     -o-flex-flow: row wrap;
     justify-content: center;
+} */
+
+.gallery-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -249,26 +242,33 @@ footer ul li a {
     hr {
         display: none;
     }
+    
+    .maincontent-sidebar {
+        display: block;
+        width: 32%
+    }
+    
+    .maincontent-main {
+        width: 54%;
+        margin-left: 6%;
+    }
+    
+    .maincontent-block {
+        margin: 50px 0px;
+    }
+    
+    .gallery-links {
+        margin: 50px auto;
+        flex-direction: row;
+    }
+    
+    .gallery-h2 {
+        display: none;
+    }
+    
+    .gallery-image {
+        margin: 10px;
+    }
 
 }
 
-@media only screen and (min-width: 950px) {
-
-    .disclaimer {
-          display: block;
-          font-family: "Open Sans", sans-serif;
-          font-weight: 300;
-          font-size: 18px;
-          letter-spacing: 2px;
-          line-height: 24px;
-          color: #ffffff;
-          text-transform: uppercase;
-          float: left;
-          margin: 0 80px;
-    }
-
-    .disclaimer span {
-          font-style: italic;
-    }
-
-}
