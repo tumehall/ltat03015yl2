@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.gallery-image img {
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+header .header-banner {
+    background-image: url("img/spoons.jpg");
+    width: 100%;
+    height: calc(100vh - 600px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+header h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    color: #000000;
+    line-height: 90%;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 40px 0 20px 0;
+    
+}
+
+header h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+hr {
+    color: #000000;
+    border: solid 1px;
+    width: 60%;
+    margin: 0px auto 0px auto;
+}
+
+header .logo {
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center; /*IE*/
+    /*width: fit-content;*/
+    padding: 0px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 16px 16px;
+}
+
+nav ul li a {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #172029;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+footer {
+    width: fit-content;
+    float: left;
+    padding-left: 0px;
+}
+
+footer {
+    display: block;
+    padding: 0 0 10px 0;
+}
+
+footer p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+footer ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-sm {
+    width: 32px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    display: none;
+}
+
+.maincontent-block {
+    margin: 30px 0px 30px 0px;
+}
+
+.maincontent-main {
+    display: block;
+    float: left;
+    height: auto;
+    width: calc(100vh - 200px);
+}
+
+.maincontent-h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 4px;
+    padding: 0px 4%;
+    color: #000000;
+    text-align: left;
+}
+
+.maincontent-text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 0px 4%;
+    color: #000000;
+    text-align: justify;
+}
+
+.maincontent-sidebar {
+    display: block;
+    background: #000000;
+    height: auto;
+    width: 200px;
+    float: right;
+}
+
+.gallery {
+    display: block;
+    width: px;
+}
+
+
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+} 
+
+.post-header {       
+
+    /*kujundus*/
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111111;
+
+    /*positsioneerimine*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 950px) {   
+
+    header .header-banner {
+          height: calc(100vh - 400px);
+    }   
+
+    header h1 a {
+          font-size: 80px;
+    }  
+
+    header h2 {
+          font-size: 24px;
+          margin-top: 20px;
+    }
+
+    header nav ul li {
+           padding: 16px 42px;
+    }
+    
+    header ul li a {
+        font-size: 22pt;
+    }
+    
+    header .menu {
+        margin-bottom: 30px;
+    }
+    
+    hr {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 950px) {
+
+    .disclaimer {
+          display: block;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          letter-spacing: 2px;
+          line-height: 24px;
+          color: #ffffff;
+          text-transform: uppercase;
+          float: left;
+          margin: 0 80px;
+    }
+
+    .disclaimer span {
+          font-style: italic;
+    }
+
+}
